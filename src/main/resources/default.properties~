@@ -1,6 +1,0 @@
-info.build.description=@project.description@
-info.build.name=@project.name@
-info.build.artifact=@project.artifactId@
-info.build.version=@project.version@
-
-server.port: 10000

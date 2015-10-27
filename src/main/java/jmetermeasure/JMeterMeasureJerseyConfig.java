@@ -2,6 +2,8 @@ package jmetermeasure;
 
 import javax.ws.rs.ApplicationPath;
 
+import jmetermeasure.resources.TestResource;
+
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,6 +21,6 @@ public class JMeterMeasureJerseyConfig extends ResourceConfig {
     }
 
     private void registerSpartacusResources() {
-    	// put resources over here
+    	register(TestResource.class);
     }
 }
